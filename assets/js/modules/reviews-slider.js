@@ -12,7 +12,7 @@ export const initSlider = () => {
                 spaceBetween: 20
             },
             520: {
-                slidesPerView: 3,
+                slidesPerView: 2,
                 spaceBetween: 25
             },
             1024: {
