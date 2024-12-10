@@ -35,6 +35,9 @@
         padding: 0;
         max-width: 55%;
         @include heading("xl");
+        @include lg {
+            max-width: 100%;
+        }
     }
 
     // .services-section__link-more

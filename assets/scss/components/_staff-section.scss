@@ -30,6 +30,9 @@
         padding: 0;
         max-width: 55%;
         @include heading("xl");
+        @include lg {
+            max-width: 100%;
+        }
     }
 
     // .staff-section__content
@@ -42,7 +45,7 @@
 
     &__grid {
         width: 100%;
-        @include col(4);
+        @include col(4, 24px, 1);
     }
 
     // .staff-section__grid-item
