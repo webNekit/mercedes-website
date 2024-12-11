@@ -575,8 +575,8 @@ body {
   margin-inline-start: auto;
 }
 
-.services-page .services-section {
-  padding-block-start: 140px;
+.services-page .services-section .services-section__title {
+  max-width: 100%;
 }
 
 .guides-section {
@@ -681,6 +681,10 @@ body {
 
 .guides-page .guides-section {
   padding-block-start: 140px;
+}
+
+.guides-page .guides-section .guides-section__title {
+  max-width: 100%;
 }
 
 .staff-section {
@@ -851,6 +855,11 @@ body {
   font-size: clamp(1.625rem, 0.0104rem + 4.1667vw, 3.5rem);
   font-weight: var(--font-semibold);
   font-family: var(--ff-secondary);
+}
+@media (max-width: 1024px) {
+  .gallery-section__title {
+    max-width: 100%;
+  }
 }
 .gallery-section__content {
   width: 100%;

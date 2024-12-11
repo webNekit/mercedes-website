@@ -28,6 +28,9 @@
     &__title {
         max-width: 55%;
         @include heading("xl");
+        @include lg {
+            max-width: 100%;
+        }
     }
 
     // .gallery-section__content
