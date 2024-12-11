@@ -77,6 +77,37 @@ body {
   background-color: hsl(var(--background));
 }
 
+.button-up {
+  --spacing: 30px;
+  --size: 52px;
+  cursor: pointer;
+  position: fixed;
+  z-index: 90;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--size);
+  height: var(--size);
+  bottom: var(--spacing);
+  right: var(--spacing);
+  border-radius: var(--radius);
+  background-color: hsl(var(--primary));
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: all 300ms ease-in-out;
+}
+.button-up:has(svg) svg {
+  width: 32px;
+  height: 32px;
+  stroke: #000;
+}
+.button-up.button-up--active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+
 .badge-section {
   position: relative;
   padding-inline-start: 50px;
